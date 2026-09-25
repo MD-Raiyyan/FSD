@@ -1,0 +1,17 @@
+let dict = {
+    "merry": "god",
+    "christmas": "jul",
+    "and": "och",
+    "happy": "gott",
+    "new": "nytt",
+    "year": "år"
+};
+
+let text = "merry christmas and happy new year";
+let words = text.split(" ");
+let result = "";
+
+for (let word of words)
+    result += dict[word] + " ";
+
+document.write(result);
