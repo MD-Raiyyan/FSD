@@ -1,0 +1,20 @@
+function sum(a) {
+    let s = 0;
+
+    for (let x of a)
+        s += x;
+
+    return s;
+}
+
+function multiply(a) {
+    let m = 1;
+
+    for (let x of a)
+        m *= x;
+
+    return m;
+}
+
+document.write("Sum = " + sum([1,2,3,4]) + "<br>");
+document.write("Multiply = " + multiply([1,2,3,4]));
