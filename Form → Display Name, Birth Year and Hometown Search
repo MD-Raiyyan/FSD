@@ -1,0 +1,14 @@
+function showDetails() {
+
+    let name = document.getElementById("name").value;
+    let age = Number(document.getElementById("age").value);
+    let town = document.getElementById("town").value;
+
+    let year = new Date().getFullYear() - age;
+
+    document.getElementById("result").innerHTML =
+        "Name: " + name + "<br>" +
+        "Birth Year: " + year + "<br>" +
+        "Hometown: <a href='https://www.google.com/search?q=" +
+        encodeURIComponent(town) +
+        "' target='_blank'>Search Hometown</a>";
