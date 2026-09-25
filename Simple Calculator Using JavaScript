@@ -1,0 +1,16 @@
+function calculate() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    let op = document.getElementById("op").value;
+    let r;
+
+    if (op == "+")
+        r = a + b;
+    else if (op == "-")
+        r = a - b;
+    else if (op == "*")
+        r = a * b;
+    else
+        r = a / b;
+
+    document.getElementById("result").innerHTML = "Result = " + r;
