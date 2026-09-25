@@ -1,0 +1,16 @@
+function translate(str) {
+    let result = "";
+
+    for (let ch of str) {
+        if ("aeiouAEIOU".includes(ch))
+            result += ch;
+        else if (ch == " ")
+            result += " ";
+        else
+            result += ch + "o" + ch;
+    }
+
+    return result;
+}
+
+document.write(translate("this is fun"));
