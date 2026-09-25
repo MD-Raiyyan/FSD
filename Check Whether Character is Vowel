@@ -1,0 +1,8 @@
+function isVowel(ch) {
+    if ("aeiouAEIOU".includes(ch))
+        return true;
+    else
+        return false;
+}
+
+document.write(isVowel("a"));
