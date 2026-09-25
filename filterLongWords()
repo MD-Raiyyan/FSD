@@ -1,0 +1,12 @@
+function filterLongWords(words, i) {
+    let result = [];
+
+    for (let word of words) {
+        if (word.length > i)
+            result.push(word);
+    }
+
+    return result;
+}
+
+document.write(filterLongWords(["apple", "cat", "banana", "dog"], 4));
