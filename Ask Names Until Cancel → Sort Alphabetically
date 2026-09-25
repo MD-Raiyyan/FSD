@@ -1,0 +1,15 @@
+let names = [];
+let name;
+
+while ((name = prompt("Enter name")) != null) {
+    names.push(name);
+}
+
+names.sort();
+
+document.write("<ol>");
+
+for (let name of names)
+    document.write("<li>" + name + "</li>");
+
+document.write("</ol>");
